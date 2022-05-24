@@ -1,9 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Baloo+Tammudu+2:wght@400;500;600;700;800&display=swap');
 
 :root{
---primary-clr:#7b337d;
---secondary-clr:#c874b2;
---bg-clr:#f5d5e0;
+--primary-clr:hsl(300, 100%, 25%);
+--secondary-clr:hsl(300, 76%, 72%);
+--bg-clr:hsl(240, 67%, 94%);
 --spacing:0.1rem;
 transition: all 0.5s linear;
 }
@@ -21,5 +21,46 @@ html{
 body{
   font-family: 'Baloo Tammudu 2', cursive;
   color: var(--primary-clr);
-  background-color: var();
+  background-color:var(--bg-clr);
 }
+.navbar{
+  background: var(--primary-clr);
+  color: white;
+  position: sticky;
+  top: 0;
+  height: 4rem;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  box-shadow: 0 0 20px var(--primary-clr);
+  z-index: 1;
+}
+.nav-center{
+  width: 100%;
+  max-width: 1170px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 1.5rem;
+}
+.navbar-brand{
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+.navbar-brand-title{
+  color: var(--secondary-clr);
+}
+.nav-icon{
+  font-size: 1.5rem;
+}
+.btn-cart{
+  position: relative;
+  cursor: pointer;
+}
+.cart-items{
+  position: absolute;
+  top: -8px;
+  right: -12px;
+}
+/* Nav bar ends */
